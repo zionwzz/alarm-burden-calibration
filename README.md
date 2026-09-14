@@ -16,8 +16,8 @@ are all here.
 
 ## What is here, and what is not
 
-The repository holds the analysis and simulation code, the synthetic tests, the figure-generation
-sources and the manuscript files. It does not hold the ALOTT records, any derived patient- or
+The repository holds the analysis and simulation code, the synthetic tests and the figure-generation
+sources. It does not hold the ALOTT records, any derived patient- or
 admission-level dataset, the study's cohort table or split record, the fitted calibration maps, the
 aggregate analysis results the tables and figures were generated from, or the saved simulation
 replicates. The ALOTT database (version 1.0.0) is distributed by PhysioNet to credentialed users under
@@ -37,7 +37,6 @@ the code alone.
 | `tables/` | The generators of the manuscript's data tables. |
 | `tests/`, `tools/test_*.py` | Synthetic tests: every scanner end to end on a synthetic release, the shared conventions, the cohort hook, the estimator, and numerical checks of the algebra and the linkage conventions. |
 | `tools/` | The scan driver, the completeness and joint-cell identity checks, the remover of duplicated row blocks after an interrupted scan, the tuning-map builder, the plot-data exporter, the comparison of the prespecified and in-sample maps, and the cohort-restriction tools. |
-| `manuscript/` | `main.tex`, `supplement.tex`, `refs.bib` and `figures/` as submitted; `figures/Figure1_framework.tex` is the source of the framework diagram. |
 
 `generated/` (tables, figures and plot data written by the generators), `work/` (a working tree),
 `data/` and `simulation/results/` are created on demand and are not tracked.
@@ -51,7 +50,6 @@ distribution with pdfLaTeX, BibTeX and TikZ for the manuscript and the framework
 make test                 # estimator, algebra and linkage checks; the scanners on a synthetic release
 make simulation           # the submitted simulation runs, then the simulation tables and findings text
 make simulation-figures   # Figures 2, S6 and S7 from the simulation results
-make manuscript           # main.pdf and supplement.pdf from manuscript/
 ```
 
 `make simulation` is computationally intensive: four million pseudo-patients per scenario define the
@@ -111,8 +109,7 @@ subsample.
 
 The table and figure generators read a completed working tree, or a copy of its analysis records in the
 same layout, and write under `generated/`; the manuscript's captions and notes are editorial, and the
-numbers are the generated ones. The data figures in `manuscript/figures/` were rendered with
-Matplotlib 3.10; another version draws the same marks with small differences in glyph placement.
+numbers are the generated ones.
 
 ## Data and ethics
 
