@@ -1,0 +1,30 @@
+# generated outputs and working trees
+generated/
+work/
+data/
+simulation/results/
+deposited_aggregates/
+aggregates/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+
+# LaTeX by-products
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+manuscript/*.pdf
+
+# editors and systems
+.DS_Store
+.idea/
+.vscode/

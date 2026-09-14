@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript when using this code."
+title: "alarm-burden-calibration: linked-reward calibration of threshold-replayed alarm burden"
+abstract: >-
+  Analysis code, simulation study, synthetic tests, figure-generation sources and
+  manuscript files for linked-reward calibration of recorded clinical alarms, a method
+  that anchors threshold replay of stored vital-sign measurements to the alarms a
+  bedside monitor recorded.
+type: software
+license: MIT
+repository-code: "https://github.com/zionwzz/alarm-burden-calibration"
+authors:
+  - family-names: Wang
+    given-names: Zihao
+    affiliation: "Division of Biostatistics and Bioinformatics, Department of Public Health Sciences, University of Miami Miller School of Medicine"
+  - family-names: Ceccarelli
+    given-names: Michele
+    affiliation: "Division of Biostatistics and Bioinformatics, Department of Public Health Sciences, and Sylvester Comprehensive Cancer Center, University of Miami Miller School of Medicine"
+  - family-names: Lu
+    given-names: Min
+    affiliation: "Division of Biostatistics and Bioinformatics, Department of Public Health Sciences, University of Miami Miller School of Medicine"
+keywords:
+  - clinical alarms
+  - alarm burden
+  - physiological monitoring
+  - threshold replay
+  - standardisation
+  - transportability
+  - clustered inference
+preferred-citation:
+  type: article
+  title: "Alarm burden beyond threshold replay: linked-reward calibration of recorded clinical alarms"
+  authors:
+    - family-names: Wang
+      given-names: Zihao
+    - family-names: Ceccarelli
+      given-names: Michele
+    - family-names: Lu
+      given-names: Min
+  journal: "Translational Insights"
+  year: 2026
+  notes: "Submitted."
